@@ -31,11 +31,11 @@
                   : undefined;
 
         selectedVerse = fullMusic ? { ...verse, music: fullMusic } : verse;
-        showModal = true; 
+        showModal = true;
     };
 
     const closeModal = () => {
-        showModal = false; 
+        showModal = false;
     };
 </script>
 
@@ -44,7 +44,6 @@
 </svelte:head>
 
 <div class="page">
-    
     <header class="top-nav">
         <div class="top-nav-inner">
             <nav class="nav-bar">
@@ -127,7 +126,6 @@
         <div class="verse-header-line"></div>
 
         <section class="scrolls-grid">
-
             {#each verses as verse, index}
                 <article class="scroll-card">
                     <div class="scroll-inner">
@@ -324,8 +322,6 @@
         padding: 0;
     }
 
-    
-
     /* links */
     .nav-link {
         text-decoration: none;
@@ -365,7 +361,7 @@
 
     .gita-hero {
         position: relative;
-        background-image: url("/images/gita-banner.png"); 
+        background-image: url("/images/gita-banner.png");
         background-size: cover;
         background-position: center;
         min-height: 300px;
@@ -402,7 +398,7 @@
         transform: translateX(-50%);
         width: 120px;
         height: 80px;
-        background-image: url("/images/gita-book.png"); 
+        background-image: url("/images/gita-book.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -426,7 +422,7 @@
     }
 
     .footer {
-        background: #2c4630; 
+        background: #2c4630;
         color: #f4f0df;
         padding: 40px 16px 32px;
         text-align: center;
@@ -461,8 +457,6 @@
         justify-content: center;
         background: transparent;
     }
-
-    
 
     /* brand wordmark */
 
@@ -559,8 +553,6 @@
         justify-content: center;
         background: transparent;
     }
-
-    
 
     /* brand wordmark */
 
@@ -688,7 +680,6 @@
         margin-left: 2px;
     }
 
-    
     .modal-backdrop {
         position: fixed;
         inset: 0;
@@ -736,8 +727,6 @@
         color: #333333;
     }
 
-    
-
     .modal-audio {
         width: 100%;
         margin-top: 12px;
@@ -780,7 +769,6 @@
         margin: 2px 0;
     }
 
-    
     .mobile-menu {
         display: none;
     }
